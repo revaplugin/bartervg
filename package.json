@@ -1,38 +1,46 @@
 {
-  "name": "@revaplugin/bartervg",
-  "version": "0.0.1",
-  "description": "Barter.vg plugin for RevaBot",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/revaplugin/bartervg.git"
-  },
-  "keywords": [
-    "plugin",
-    "extension",
-    "module",
-    "revadike",
-    "revabot",
-    "revaplugin",
-    "barter",
-    "barter.vg"
-  ],
-  "dependencies": {
-    "libbarter": "^1.2.1"
-  },
-  "devDependencies": {
-    "eslint": "latest"
-  },
-  "author": "Revadike <revadike@outlook.com> (https://revadike.com/)",
-  "license": "GPL-3.0-or-later",
-  "bugs": {
-    "url": "https://github.com/revaplugin/bartervg/issues"
-  },
-  "homepage": "https://github.com/revaplugin/bartervg#readme",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/revaplugin"
-  }
+    "name": "@revaplugin/bartervg",
+    "version": "1.0.0",
+    "description": "Barter.vg plugin for RevaBot",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prepublishOnly": "npm-multi-publish",
+        "postpublish": "npm-multi-publish"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/revaplugin/bartervg.git"
+    },
+    "keywords": [
+        "plugin",
+        "extension",
+        "module",
+        "revadike",
+        "revabot",
+        "revaplugin",
+        "barter",
+        "barter.vg"
+    ],
+    "dependencies": {
+        "libbarter": "^1.2.1"
+    },
+    "devDependencies": {
+        "eslint": "latest",
+        "npm-multi-publish": "latest"
+    },
+    "author": "Revadike <revadike@outlook.com> (https://revadike.com/)",
+    "license": "GPL-3.0-or-later",
+    "bugs": {
+        "url": "https://github.com/revaplugin/bartervg/issues"
+    },
+    "homepage": "https://github.com/revaplugin/bartervg#readme",
+    "publishConfig": [
+        {
+            "registry": "https://npm.pkg.github.com"
+        },
+        {
+            "registry": "https://registry.npmjs.org"
+        }
+    ]
 }
