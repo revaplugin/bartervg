@@ -1,0 +1,19 @@
+{
+    "login": {
+        "title": "Login at Barter.vg"
+    },
+    "logout": {
+        "title": "Logout at Barter.vg"
+    },
+    "monitorOffers": {
+        "title": "Monitor for accepted offers",
+        "options": [
+            {
+                "name": "enabled",
+                "default": false,
+                "type": "toggle",
+                "description": "Turn on this task"
+            }
+        ]
+    }
+}

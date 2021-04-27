@@ -1,3 +1,9 @@
+# Other
+*.lnk
+*.bat
+package-lock.json
+tasks/custom/
+
 # Logs
 logs
 *.log
