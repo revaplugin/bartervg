@@ -1,4 +1,4 @@
-const RevaPlugin = require("@revaplugin/RevaPlugin");
+const RevaPlugin = require("@revaplugin/revaplugin");
 
 module.exports = class BarterVG extends RevaPlugin {
 
