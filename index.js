@@ -1,15 +1,11 @@
-const Tasks = require("./tasks/index");
-let CustomTasks = {};
-try { CustomTasks = require("./tasks/custom/index"); } catch (e) { /* No custom tasks */ }
+const RevaPlugin = require("@revaplugin/RevaPlugin");
 
-class BarterVG {
+module.exports = class BarterVG extends RevaPlugin {
 
     constructor() {
+        super();
         this.barter = null;
-        this.tasks = { ...Tasks, ...CustomTasks };
-        this.events = [];
+        this.loadTasks();
     }
 
-}
-
-module.exports = { BarterVG };
+};

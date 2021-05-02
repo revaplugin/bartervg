@@ -1,6 +1,6 @@
 {
     "name": "@revaplugin/bartervg",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Barter.vg plugin for RevaBot",
     "main": "index.js",
     "scripts": {
@@ -23,16 +23,19 @@
         "barter.vg"
     ],
     "dependencies": {
+        "@revaplugin/RevaPlugin": "latest",
         "libbarter": "^1.2.1"
     },
     "devDependencies": {
+        "@babel/eslint-parser": "latest",
         "eslint": "latest",
         "npm-multi-publish": "latest"
     },
     "author": "Revadike <revadike@outlook.com> (https://revadike.com/)",
     "license": "GPL-3.0-or-later",
     "bugs": {
-        "url": "https://github.com/revaplugin/bartervg/issues"
+        "url": "https://github.com/revaplugin/bartervg/issues",
+        "email": "revadike@outlook.com"
     },
     "homepage": "https://github.com/revaplugin/bartervg#readme",
     "publishConfig": [
