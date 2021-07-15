@@ -2,11 +2,13 @@ const Barter = require("libbarter");
 
 module.exports = async function login(self, args) {
     let { steam } = args;
-    if (!steam) {
-        throw new Error("Requires @revaplugin/steam");
-    }
 
-    if (!await steam.user.loggedIn()) {
+    // WILL BE DONE BY REVAPLUGIN
+    // if (!steam) {
+    //     throw new Error("Requires @revaplugin/steam");
+    // }
+
+    if (!await steam.loggedIn()) {
         throw new Error("Requires to be logged into steam");
     }
 

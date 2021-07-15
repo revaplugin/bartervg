@@ -1,0 +1,11 @@
+{
+    "title": "Monitor for accepted offers",
+    "options": [
+        {
+            "name": "enabled",
+            "default": false,
+            "type": "toggle",
+            "description": "Turn on this task"
+        }
+    ]
+}

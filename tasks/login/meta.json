@@ -1,0 +1,8 @@
+{
+    "title": "Login at Barter.vg",
+    "requires": ["steam"],
+    "optional": ["database"],
+    "options": {
+        "rememberLogin": true
+    }
+}
